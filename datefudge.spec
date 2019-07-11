@@ -20,7 +20,7 @@ sed "s/VERSION := \$\(.*\)/VERSION := %{version}/g" -i Makefile
 sed 's/-o root -g root/-p/g' -i Makefile
 
 %build
-LDFLAGS="%{__global_ldflags}" CFLAGS="%{optflags}" %make_build libdir=%{_libexecdir}
+LDFLAGS="%{ldflags}" CFLAGS="%{optflags}" %make_build libdir=%{_libexecdir}
 
 %install
 %make_install DESTDIR=%{buildroot} libdir=%{_libexecdir}

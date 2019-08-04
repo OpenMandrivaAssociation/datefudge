@@ -1,5 +1,5 @@
 Name:		datefudge
-Version:	1.22
+Version:	1.23
 Release:	1
 Summary:	Fake the system date
 Group:		System/Configuration/Other

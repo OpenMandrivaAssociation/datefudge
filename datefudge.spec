@@ -1,5 +1,5 @@
 Name:		datefudge
-Version:	1.23
+Version:	1.24
 Release:	1
 Summary:	Fake the system date
 Group:		System/Configuration/Other
@@ -20,7 +20,8 @@ sed "s/VERSION := \$\(.*\)/VERSION := %{version}/g" -i Makefile
 sed 's/-o root -g root/-p/g' -i Makefile
 
 %build
-LDFLAGS="%{ldflags}" CFLAGS="%{optflags}" %make_build libdir=%{_libexecdir}
+%set_build_flags
+LDFLAGS="%{build_ldflags}" CFLAGS="%{optflags}" %make_build libdir=%{_libexecdir}
 
 %install
 %make_install DESTDIR=%{buildroot} libdir=%{_libexecdir}

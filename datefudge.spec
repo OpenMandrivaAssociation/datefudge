@@ -1,6 +1,6 @@
 Name:		datefudge
 Version:	1.24
-Release:	1
+Release:	2
 Summary:	Fake the system date
 Group:		System/Configuration/Other
 License:	GPLv2+

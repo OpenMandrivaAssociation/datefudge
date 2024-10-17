@@ -4,7 +4,7 @@ Release:	1
 Summary:	Fake the system date
 Group:		System/Configuration/Other
 License:	GPLv2+
-URL:		http://packages.qa.debian.org/d/datefudge.html
+URL:		https://packages.qa.debian.org/d/datefudge.html
 Source0:	http://cdn.debian.net/debian/pool/main/d/datefudge/%{name}_%{version}.tar.xz
 
 %description
